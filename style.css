@@ -115,7 +115,7 @@ main{
     display: none;
 }
 
-.glow-primary {
+.glow-primary:hover {
     box-shadow: 0 0 10px rgba(145, 92, 182, 0.6), 
                 0 0 20px rgba(145, 92, 182, 0.4), 
                 0 0 30px rgba(145, 92, 182, 0.2);
