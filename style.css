@@ -65,9 +65,6 @@ main{
 .card__body__link a:hover {
     background-color: var(--brand-primary-color);
     color: var(--primary-gray-color);
-    box-shadow: 0 0 10px rgba(145, 92, 182, 0.6), 
-                0 0 20px rgba(145, 92, 182, 0.4), 
-                0 0 30px rgba(145, 92, 182, 0.2);
 }
 
 .card__body__link a{
