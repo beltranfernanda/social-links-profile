@@ -40,6 +40,7 @@ main{
 
 .card{
     background-color: var(--secondary-gray-color);
+    background: linear-gradient(90deg, #492957, #744A6D);
     border-radius: 20px;
     display: flex;
     flex-direction: column;
