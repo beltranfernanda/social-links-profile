@@ -30,7 +30,7 @@ body{
     color: var(--brand-primary-color);
 }
 
-main{
+main {
     display: flex;
     background-color: var(--black-color);
     justify-content: center;
@@ -38,15 +38,18 @@ main{
     min-height: 100vh;
 }
 
-.card{
+.card {
     background-color: var(--secondary-gray-color);
-    background: linear-gradient(90deg, #492957, #744A6D);
     border-radius: 20px;
     display: flex;
     flex-direction: column;
     align-items: center;
     padding: 30px;
     width: 350px;
+}
+
+.card:hover {
+    background: linear-gradient(90deg, #492957, #744A6D);
 }
 
 .card__body{
