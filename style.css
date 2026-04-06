@@ -50,6 +50,7 @@ main {
 
 .card:hover {
     background: linear-gradient(90deg, #492957, #744A6D);
+    border: 1px solid var(--brand-primary-color);
 }
 
 .card__body{
