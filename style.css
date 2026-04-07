@@ -68,8 +68,7 @@ main {
 }
 
 .card__body__link a:hover {
-    background-color: var(--brand-primary-color);
-    color: var(--primary-gray-color);
+    background: linear-gradient(90deg, #6D51A5, #E4A7C5);
 }
 
 .card__body__link a{
