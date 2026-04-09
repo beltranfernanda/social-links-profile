@@ -121,7 +121,3 @@ main {
                 0 0 20px rgba(145, 92, 182, 0.4), 
                 0 0 30px rgba(145, 92, 182, 0.2);
 }
-
-.border-primary {
-    border: 1px solid var(--brand-primary-color);
-}
