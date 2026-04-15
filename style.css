@@ -1,9 +1,10 @@
-*{
+* {
     --text-color: #fff;
     --brand-primary-color: #bb86fc;
     --black-color: 	#141414;
     --primary-gray-color: #333;
     --secondary-gray-color: #1f1f1f;
+    --glow-border-color: #c13584;
     --primary-font-size: 14px;
 }
 
@@ -135,7 +136,7 @@ main {
   height: 200%;
   background: conic-gradient(
     transparent, 
-    #c13584, /* Use Maria's profile pink/purple colors */
+    var(--glow-border-color), 
     transparent 30%
   );
   animation: rotate 4s linear infinite;
