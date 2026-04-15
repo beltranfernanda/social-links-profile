@@ -46,11 +46,12 @@ main {
     align-items: center;
     padding: 30px;
     width: 350px;
-}
 
-.card:hover {
-    background: linear-gradient(90deg, #492957, #744A6D);
-    border: 1px solid var(--brand-primary-color);
+    position: relative;
+    
+    
+    z-index: 1;
+    overflow: hidden; /* Ensures the glow doesn't spill out */
 }
 
 .card__body{
@@ -121,3 +122,51 @@ main {
                 0 0 20px rgba(145, 92, 182, 0.4), 
                 0 0 30px rgba(145, 92, 182, 0.2);
 }
+
+
+
+/* The moving border layer */
+.card::before {
+  content: '';
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  background: conic-gradient(
+    transparent, 
+    #c13584, /* Use Maria's profile pink/purple colors */
+    transparent 30%
+  );
+  animation: rotate 4s linear infinite;
+  z-index: -1;
+  /* Hide by default, show on hover */
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+/* Show the animation on hover */
+.card:hover::before {
+  opacity: 1;
+}
+
+/* Create the "inner" border effect */
+.card::after {
+  content: '';
+  position: absolute;
+  inset: 2.5px; /* This defines the border thickness (2px) */
+  background-color: var(--secondary-gray-color); /* Matches card background */
+  border-radius: 18px;
+  z-index: -1;
+}
+
+/* The Rotation Keyframes */
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
