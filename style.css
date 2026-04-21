@@ -19,7 +19,7 @@
     color: var(--brand-primary-color); 
 }
 
-body{
+body {
     box-sizing: border-box;
     margin: 0;
     font-size: var(--primary-font-size);
