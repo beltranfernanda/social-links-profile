@@ -47,10 +47,7 @@ main {
     align-items: center;
     padding: 30px;
     width: 350px;
-
     position: relative;
-    
-    
     z-index: 1;
     overflow: hidden; /* Ensures the glow doesn't spill out */
 }
