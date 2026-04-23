@@ -52,7 +52,7 @@ main {
     overflow: hidden; /* Ensures the glow doesn't spill out */
 }
 
-.card__body{
+.card__body {
     width: 100%;
     display: flex;
     align-items: center;
