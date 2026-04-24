@@ -70,7 +70,7 @@ main {
     background: linear-gradient(90deg, #6D51A5, #E4A7C5);
 }
 
-.card__body__link a{
+.card__body__link a {
     display: block;
     background-color: var(--primary-gray-color);
     color: var(--text-color);
